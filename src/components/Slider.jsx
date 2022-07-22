@@ -28,7 +28,7 @@ const Arrow = styled.div`
   margin: auto;
   cursor: pointer;
   opacity: 0.7;
-  z-index: 999;
+  z-index: 2;
 `;
 const Wrapper = styled.div`
   height: 100px;
