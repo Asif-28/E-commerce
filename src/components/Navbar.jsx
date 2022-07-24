@@ -58,7 +58,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Centre>
-          <Logo>Sold.</Logo>
+          <Logo>SOLD.com</Logo>
         </Centre>
         <Right>
           <MenuItems>REGISTER</MenuItems>

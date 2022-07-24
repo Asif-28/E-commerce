@@ -1,10 +1,18 @@
-import { Facebook, Instagram, Twitter } from "@material-ui/icons";
+import {
+  Facebook,
+  Instagram,
+  MailOutline,
+  Phone,
+  Room,
+  Twitter,
+} from "@material-ui/icons";
 import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
 `;
 const Logo = styled.h1``;
+
 const Desc = styled.p`
   margin: 20px 0px;
 `;
@@ -21,6 +29,7 @@ const SocialItems = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 3px;
+  cursor: pointer;
 `;
 
 const Left = styled.div`
@@ -29,11 +38,33 @@ const Left = styled.div`
   flex-direction: column;
   padding: 20px;
 `;
+const Title = styled.h3`
+  margin-bottom: 30px;
+`;
+const List = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+`;
+const ListItem = styled.li`
+  margin-bottom: 20px;
+  width: 50%;
+`;
+
 const Center = styled.div`
   flex: 1;
+  padding: 20px;
 `;
 const Right = styled.div`
   flex: 1;
+  padding: 20px;
+`;
+const ContactItem = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 `;
 
 const Footer = () => {
@@ -58,8 +89,34 @@ const Footer = () => {
           </SocialItems>
         </SocialConatiner>
       </Left>
-      <Center></Center>
-      <Right></Right>
+      <Center>
+        <Title>Useful Links</Title>
+        <List>
+          <ListItem>Home</ListItem>
+          <ListItem>Cart </ListItem>
+          <ListItem>Men Fashion</ListItem>
+          <ListItem>Women Fashion </ListItem>
+          <ListItem>Kids Wea </ListItem>
+          <ListItem>Accessories</ListItem>
+          <ListItem>My Account </ListItem>
+          <ListItem>Wish list </ListItem>
+          <ListItem>Terms</ListItem>
+        </List>
+      </Center>
+      <Right>
+        <Title>Contact Me</Title>
+        <ContactItem>
+          <Room style={{ marginRight: "10px" }} /> 227 Aloklata 4BC kestopur
+          kolkata
+        </ContactItem>
+        <ContactItem>
+          <Phone style={{ marginRight: "10px" }} /> +91 7903916011
+        </ContactItem>
+        <ContactItem>
+          <MailOutline style={{ marginRight: "10px", cursor: "pointer" }} />{" "}
+          asif.a.7277@gmail.com
+        </ContactItem>
+      </Right>
     </Container>
   );
 };

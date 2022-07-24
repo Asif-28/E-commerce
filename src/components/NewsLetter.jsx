@@ -37,6 +37,7 @@ const Button = styled.button`
   border: none;
   background-color: purple;
   color: white;
+  cursor: pointer;
 `;
 
 const NewsLetter = () => {
