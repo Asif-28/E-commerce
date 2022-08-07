@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: "https://cdn.pixabay.com/photo/2016/04/19/13/39/store-1338629__340.jpg",
     title: "STYLED SHIRT !!",
+    cat: "men",
   },
   {
     id: 2,
     img: "https://cdn.pixabay.com/photo/2017/06/20/22/14/man-2425121__340.jpg",
     title: "JACKETS !!",
+    cat: "jacket",
   },
   {
     id: 3,
     img: "https://cdn.pixabay.com/photo/2016/12/19/21/36/woman-1919143__340.jpg",
     title: "LOUNGEWEAR !!",
+    cat: "women",
   },
 ];
 
