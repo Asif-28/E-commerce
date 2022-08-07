@@ -1,6 +1,7 @@
 import { FavoriteBorderOutlined, SearchOutlined } from "@material-ui/icons";
 import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 import styled from "styled-components";
+import mobile from "../Responsive";
 
 const Info = styled.div`
   opacity: 0;
@@ -43,6 +44,7 @@ const Circle = styled.div`
 const Image = styled.img`
   height: 75%;
   z-index: 2;
+  ${mobile({ width: "85%" })};
 `;
 const Icon = styled.div`
   width: 40px;

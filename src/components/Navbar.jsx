@@ -5,6 +5,7 @@ import { Badge } from "@mui/material";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 // import {mobile}  form "../Responsive";
 import mobile from "../Responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -73,11 +74,23 @@ const Navbar = () => {
           <Logo>SOLD.com</Logo>
         </Centre>
         <Right>
-          <MenuItems>REGISTER</MenuItems>
-          <MenuItems>LOG IN</MenuItems>
+          <Link
+            to="/Register"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <MenuItems>REGISTER</MenuItems>
+          </Link>
+          <Link
+            to="/Login"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <MenuItems>LOG IN</MenuItems>
+          </Link>
           <MenuItems>
             <Badge badgeContent={0} color="secondary"></Badge>
-            <ShoppingCartOutlinedIcon />
+            <Link to="/Cart">
+              <ShoppingCartOutlinedIcon />
+            </Link>
           </MenuItems>
         </Right>
       </Wrapper>

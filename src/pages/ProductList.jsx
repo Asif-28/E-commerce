@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -29,6 +31,18 @@ const Select = styled.select`
 `;
 const Option = styled.option``;
 const ProductList = () => {
+  const location = useLocation();
+  const cat = location.pathname.split("/")[2];
+  const [filters, setFilter] = useState({});
+  const [sort, setSort] = useState("newest");
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilter({
+      ...filters,
+      [e.target.name]: value,
+    });
+  };
+  console.log(filters);
   return (
     <Container>
       <Navbar />
@@ -37,7 +51,7 @@ const ProductList = () => {
       <FilterContainer>
         <Filter>
           <FilterText>Filter Products : </FilterText>
-          <Select>
+          <Select name="color" onChange={handleFilters}>
             <Option disabled selected>
               color
             </Option>
@@ -48,7 +62,7 @@ const ProductList = () => {
             <Option>purple</Option>
             <Option>pink</Option>
           </Select>
-          <Select>
+          <Select name="size" onChange={handleFilters}>
             <Option disabled selected>
               size
             </Option>
@@ -61,15 +75,15 @@ const ProductList = () => {
         </Filter>
         <Filter>
           <FilterText>Sort Products</FilterText>
-          <Select>
-            <Option selected> Newest</Option>
-            <Option>Price (high)</Option>
-            <Option>Price (low)</Option>
+          <Select onChange={(e) => setSort(e.target.value)}>
+            <Option value="newest">Newest</Option>
+            <Option value="high"> Price (high)</Option>
+            <Option value="low">Price (low)</Option>
           </Select>
         </Filter>
         <Filter></Filter>
       </FilterContainer>
-      <Products />
+      <Products cat={cat} filters={filters} sort={sort} />
       <NewsLetter />
       <Footer />
     </Container>

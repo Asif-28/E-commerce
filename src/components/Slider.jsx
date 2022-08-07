@@ -4,6 +4,7 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { useState } from "react";
 import { sliderItems } from "../data";
 import mobile from "../Responsive";
+import { Link } from "@mui/material";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -98,6 +99,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Des> {item.desc} </Des>
+
               <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>

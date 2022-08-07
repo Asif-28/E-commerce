@@ -110,8 +110,8 @@ const Button = styled.button`
     border: none;
   }
 `;
-
-const Product = () => {
+const Product = ({ cat, filters, sort }) => {
+  console.log(cat, filters, sort);
   return (
     <Container>
       <Navbar />

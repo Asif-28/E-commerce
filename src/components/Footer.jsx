@@ -117,8 +117,13 @@ const Footer = () => {
           <Phone style={{ marginRight: "10px" }} /> +91 7903916011
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{ marginRight: "10px", cursor: "pointer" }} />{" "}
-          asif.a.7277@gmail.com
+          <MailOutline style={{ marginRight: "10px", cursor: "pointer" }} />
+          <a
+            href="mailto: asif.a.7277@gmail.com"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            asif.a.7277@gmail.com
+          </a>
         </ContactItem>
       </Right>
     </Container>
