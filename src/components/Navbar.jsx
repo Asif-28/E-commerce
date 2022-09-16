@@ -71,7 +71,11 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Centre>
-          <Logo>SOLD.com</Logo>
+          <Logo>
+            <a style={{ textDecoration: "none", color: "black" }} href="/">
+              SOLD.com
+            </a>
+          </Logo>
         </Centre>
         <Right>
           <Link

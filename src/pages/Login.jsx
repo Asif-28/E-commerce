@@ -14,6 +14,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({ backgroundRepeat: "no-repeat", backgroundSize: "cover" })}
 `;
 const Wrapper = styled.div`
   padding: 20px;

@@ -100,7 +100,10 @@ const Slider = () => {
               <Title>{item.title}</Title>
               <Des> {item.desc} </Des>
 
-              <Button>SHOP NOW</Button>
+              <a href="/products/:category">
+                <Button>SHOP NOW</Button>
+              </a>
+              {/* SHOP NOW */}
             </InfoContainer>
           </Slide>
         ))}

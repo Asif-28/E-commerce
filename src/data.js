@@ -8,14 +8,14 @@ export const sliderItems = [
   },
   {
     id: 2,
-    img: "https://cdn.pixabay.com/photo/2016/11/29/13/26/beautiful-1869830_960_720.jpg",
+    img: "https://www.pngitem.com/pimgs/m/473-4735603_beautiful-woman-in-winter-clothes-png-image-winter.png",
     title: "WINTER SALE",
     desc: "GET BEST WINTER DEAL  ! FLAT 55% OFF ON WINTER WEAR ",
     bg: "f5fafd",
   },
   {
     id: 3,
-    img: "https://cdn.pixabay.com/photo/2017/12/23/17/12/woman-3035567__340.png",
+    img: "https://www.shopsofsaddlecreek.com/wp-content/uploads/2021/06/Summer-Style-Picks-For-Men-From-Brooks-Brothers.png",
     title: "BIG BANG SALE!!",
     desc: "GET BEST DEAL FOR NEW ARRIVALS. FLAT 60% OFF ON ALL ITEMS ",
     bg: "fcf1ed",
